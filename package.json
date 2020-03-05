@@ -1,6 +1,6 @@
 {
   "name": "google-tasks",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Mac menubar wrapper for google tasks",
   "main": "main.js",
   "scripts": {
