@@ -1,7 +1,7 @@
 {
-  "name": "google-todo",
+  "name": "google-tasks",
   "version": "1.0.0",
-  "description": "Mac menubar wrapper for google todo",
+  "description": "Mac menubar wrapper for google tasks",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
