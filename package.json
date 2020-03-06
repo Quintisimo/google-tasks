@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Mac menubar wrapper for google tasks",
   "main": "main.js",
+  "productName": "Google Tasks",
   "scripts": {
     "start": "electron main.js",
     "build": "DEBUG=electron-packager electron-packager . --icon=logo.icns --overwrite"
