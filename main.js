@@ -1,7 +1,7 @@
+const { Menu } = require('electron')
 const { menubar } = require('menubar')
 
 const mb = menubar({
-  index: 'https://tasks.google.com/embed/?origin=https://mail.google.com',
   loadUrlOptions: {
     // Useragent required for google login
     // https://github.com/firebase/firebase-js-sdk/issues/2478#issuecomment-572258349
@@ -14,4 +14,17 @@ const mb = menubar({
   }
 })
 
-mb.on('ready', () => console.log('ready'))
+mb.on('after-create-window', () => {
+  mb.window.loadURL(
+    'https://tasks.google.com/embed/?origin=https://mail.google.com'
+  )
+
+  const menu = Menu.buildFromTemplate([
+    {
+      label: 'Quit',
+      click: () => mb.app.quit()
+    }
+  ])
+
+  mb.tray.on('right-click', () => mb.tray.popUpContextMenu(menu))
+})
