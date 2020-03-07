@@ -21,6 +21,13 @@ mb.on('after-create-window', () => {
 
   const menu = Menu.buildFromTemplate([
     {
+      label: 'Restart',
+      click: () => {
+        mb.app.relaunch()
+        mb.app.quit()
+      }
+    },
+    {
       label: 'Quit',
       click: () => mb.app.quit()
     }
