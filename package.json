@@ -11,10 +11,10 @@
   "author": "Quintus Cardozo",
   "license": "ISC",
   "dependencies": {
-    "menubar": "^8.0.0"
+    "menubar": "^9.5.3"
   },
   "devDependencies": {
-    "electron": "^39.8.10",
+    "electron": "^44.5.1",
     "electron-packager": "^17.1.2"
   }
 }
